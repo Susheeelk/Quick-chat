@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ---------- Dark mode ---------- */
+/* <html class="dark"> hone par ye colors lagte hain */
+.dark {
+  color-scheme: dark; /* input, scrollbar bhi dark ho jate hain */
+
+  /* Slate colors ulte kar diye: halka -> gehra, gehra -> halka */
+  --color-slate-50: #0b1220;
+  --color-slate-100: #1e293b;
+  --color-slate-200: #334155;
+  --color-slate-300: #475569;
+  --color-slate-400: #64748b;
+  --color-slate-500: #94a3b8;
+  --color-slate-600: #b6c2d2;
+  --color-slate-700: #cbd5e1;
+  --color-slate-800: #e2e8f0;
+  --color-slate-900: #f1f5f9;
+
+  /* Active chat aur error wale halke colors */
+  --color-blue-50: #172554;
+  --color-red-50: #3b1219;
+}
+
+/* bg-white ko hi badalte hain (text-white buttons par chahiye, isliye variable nahi badla) */
+.dark .bg-white {
+  background-color: #0f172a;
+}
+
+.dark body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
